@@ -27,7 +27,7 @@ def kayitsil(memleket):
 def listele(memleket):
 	imlec = veritabani.execute("SELECT * FROM OGRENCI WHERE memleket='%s'" % (memleket))	
 	for row in imlec:
-		print(row) 													#print(row[0],row[1])
+		print(row) 						#print(row[0],row[1])
 """print("veritabani listelendi")"""	
 
 
@@ -35,8 +35,11 @@ def listele(memleket):
 
 """yenikayit("ATA","IST.")"""
 """yenikayit("DEDE","ANK.")"""
+"""yenikayit("ALI","ANK.")"""
+
+"""listele("IST.")"""
 
 """kayitsil("ANK.")"""
 
-veritabani.close()				#close --> bir defa uygulama sonunda kullanılması yeterli
+veritabani.close()		#close --> bir defa uygulama sonunda kullanılması yeterli
 
