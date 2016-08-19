@@ -1,5 +1,5 @@
-#-*- coding: utf-8 -*-
 #!/usr/bin/python
+# -*- coding: utf-8 -*-
 
 import sqlite3
 
@@ -30,16 +30,22 @@ def listele(memleket):
 		print(row) 						#print(row[0],row[1])
 """print("veritabani listelendi")"""	
 
-
 """tabloolustur()"""
+
+"""print("yeni kayit")
+isim = raw_input("ismi:")
+memleket = raw_input("memleketi:")
+yenikayit(str(isim),str(memleket))"""
+
 
 """yenikayit("ATA","IST.")"""
 """yenikayit("DEDE","ANK.")"""
-"""yenikayit("ALI","ANK.")"""
 
-"""listele("IST.")"""
 
 """kayitsil("ANK.")"""
 
-veritabani.close()		#close --> bir defa uygulama sonunda kullanılması yeterli
+"""listele("IST.")"""
+
+
+veritabani.close()			#close --> bir defa uygulama sonunda kullanılması yeterli
 
