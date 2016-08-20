@@ -25,7 +25,7 @@ def kayitsil(memleket):
 def listele(memleket):
 	imlec = veritabani.execute("SELECT * FROM OGRENCI WHERE memleket='%s'" % (memleket))	
 	for row in imlec:
-		print(row) 													#print(row[0],row[1])
+		print(row) 						#print(row[0],row[1])
 """print("veritabani listelendi")"""	
 
 """tabloolustur()"""
@@ -41,4 +41,4 @@ yenikayit(str(isim),str(memleket))"""
 
 """listele("IST.")"""
 
-veritabani.close()				#close --> bir defa uygulama sonunda kullanılması yeterli
+veritabani.close()			#veritabani.close() --> bir defa kullanılması yeterli
