@@ -35,9 +35,9 @@ memleket = raw_input("memleketi:")
 yenikayit(str(isim),str(memleket))"""
 
 """yenikayit("ATA","IST.")"""
-"""yenikayit("DEDE","ANK.")"""
+"""yenikayit("DEDE","CEY.")"""
 
-"""kayitsil("ANK.")"""
+"""kayitsil("CEY.")"""
 
 """listele("IST.")"""
 
