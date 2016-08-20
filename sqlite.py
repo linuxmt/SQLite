@@ -1,8 +1,6 @@
+#-*- coding: utf-8 -*-
 #!/usr/bin/python
-# -*- coding: utf-8 -*-
-
 import sqlite3
-
 veritabani = sqlite3.connect("veritabani.db")		
 imlec = veritabani.cursor() 						
 
@@ -27,25 +25,20 @@ def kayitsil(memleket):
 def listele(memleket):
 	imlec = veritabani.execute("SELECT * FROM OGRENCI WHERE memleket='%s'" % (memleket))	
 	for row in imlec:
-		print(row) 						#print(row[0],row[1])
+		print(row) 													#print(row[0],row[1])
 """print("veritabani listelendi")"""	
 
 """tabloolustur()"""
 
-"""print("yeni kayit")
-isim = raw_input("ismi:")
+"""isim = raw_input("isim:")
 memleket = raw_input("memleketi:")
 yenikayit(str(isim),str(memleket))"""
 
-
 """yenikayit("ATA","IST.")"""
 """yenikayit("DEDE","ANK.")"""
-
 
 """kayitsil("ANK.")"""
 
 """listele("IST.")"""
 
-
-veritabani.close()			#close --> bir defa uygulama sonunda kullanılması yeterli
-
+veritabani.close()				#close --> bir defa uygulama sonunda kullanılması yeterli
